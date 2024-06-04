@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_dzierzawa'])) 
     $iddostawcy_dzierzawa = $_POST['iddostawcy_dzierzawa'];
     $kwota_jed_netto = isset($_POST['kwota_jed_netto']) ? floatval(str_replace(',', '.', validateInput($_POST['kwota_jed_netto']))) : 0;
     $ilosc_dzierzawa = isset($_POST['ilosc_dzierzawa']) ? intval($_POST['ilosc_dzierzawa']) : 0;
+    $stan_na_dzisiaj = isset($_POST['stan_na_dzisiaj']) ? intval($_POST['stan_na_dzisiaj']) : 0;
     $kwota_dzierzawy = isset($_POST['kwota_dzierzawy']) ? floatval(str_replace(',', '.', validateInput($_POST['kwota_dzierzawy']))) : 0;
     $suma_dzierzawa = $kwota_jed_netto * $ilosc_dzierzawa + $kwota_dzierzawy;
     $data_dzierzawa = $_POST['data_dzierzawa'];
