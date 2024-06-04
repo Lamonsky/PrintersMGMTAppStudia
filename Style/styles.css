@@ -1,0 +1,326 @@
+/* Resetowanie domyślnych styli przeglądarki */
+html, body, div, span, applet, object, iframe, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Ustawienia domyślnego stylu tekstu */
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#body {
+    padding-bottom: 100px; /* height of footer */
+}
+
+#holder {
+    min-height: 100%;
+    position: relative;
+}
+
+/* Kontener */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Nagłówki */
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* Formularze */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="submit"],
+a,
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+/* Komunikaty */
+.error-message,
+.success-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sekcja {
+    width: fit-content;
+    display: block;
+    float: left;
+    border: black;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.scrollable-section {
+    overflow: auto;
+    max-height: 400px; /* lub dowolna inna wartość */
+    border: 1px solid #ccc; /* Opcjonalnie: Dodaj obramowanie dla kontenera */
+    margin-bottom: 20px; /* Opcjonalnie: Dodaj odstęp między sekcjami */
+    padding: 10px; /* Opcjonalnie: Dodaj wewnętrzny odstęp dla lepszego wyglądu */
+}
+
+.logowanie {
+    width: 30%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border: black;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+tr {
+    font-size: 24px;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 2px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px;
+}
+
+table {
+    background: #012B39;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+th {
+    border-bottom: 1px solid #364043;
+    color: #E2B842;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+.disabled td {
+    color: #4F5F64;
+}
+
+tbody tr {
+    transition: background 0.25s ease;
+}
+
+tbody tr:hover {
+    background: #014055;
+}
+
+/* Style dla input typu date */
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styluj input[type="date"] po najechaniu myszką */
+input[type="date"]:hover {
+    border-color: #999;
+}
+
+/* Styluj input[type="date"] po kliknięciu */
+input[type="date"]:focus {
+    border-color: #555;
+}
+
+/* Styl dla linków */
+a.button {
+    display: inline-block;
+    padding: 12px 24px; /* Dopasuj wielkość do własnych preferencji */
+    background-color: #007bff; /* Kolor tła */
+    color: #fff; /* Kolor tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    transition: background-color 0.3s ease; /* Płynne przejście koloru tła */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styluj link po najechaniu myszką */
+a.button:hover {
+    background-color: #0056b3; /* Inny kolor tła po najechaniu */
+}
+
+/* Styluj link po kliknięciu */
+a.button:active {
+    background-color: #003d80; /* Inny kolor tła po kliknięciu */
+}
+
+/* Dodatkowe style dla kontenerów sekcji */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Dodatkowe style dla sekcji */
+.section {
+    width: 48%; /* Aby mieć dwie sekcje w jednym wierszu */
+    margin-bottom: 20px;
+}
+
+/* Style dla formularzy */
+.section form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl dla nagłówka sekcji */
+.section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styl dla inputów w formularzach */
+.section input[type="text"],
+.section input[type="password"],
+.section input[type="email"],
+.section input[type="number"],
+.section select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styl dla przycisków w formularzach */
+.section input[type="submit"],
+.section button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styl po najechaniu na przycisk w formularzu */
+.section input[type="submit"]:hover,
+.section button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl dla tabel */
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styl dla nagłówków tabeli */
+.section th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+/* Styl dla komórek tabeli */
+.section td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Stylowanie wierszy tabeli po najechaniu */
+.section tbody tr:hover {
+    background-color: #f2f2f2;
+}
